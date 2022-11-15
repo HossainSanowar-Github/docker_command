@@ -27,6 +27,15 @@ https://labs.play-with-docker.com/
 8. docker rmi -f <image_name>
 9. http://localhost:8080/ #run in localhost using local host port: 8080
 10. app.run(host="0.0.0.0",port=5000) # this is remote port/container port
+  
+##docker push
+```
+docker login
+  username:
+  password:
+docker tag <image_name>:<version> <tag_repository_name>/<image_name>
+docker push <tag_repository_name>/<image_name>
+```
 ---------------------------------------------------------------------------------------------------------------------------------------------
   
 
