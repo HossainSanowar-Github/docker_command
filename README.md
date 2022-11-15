@@ -16,10 +16,13 @@ https://labs.play-with-docker.com/
 - Run
 - CMD
 2. Build the Docker images
-- docker build -t <image-name>
+- docker build -t <image_name> .
 3. docker images
 4. docker run -d -p host port:container port image
 5. docker push <username>/docker image
+6. docker ps
+7. docker stop <image_id>
+8. docker rmi -f <image_name>
 ---------------------------------------------------------------------------------------------------------------------------------------------
   
 
