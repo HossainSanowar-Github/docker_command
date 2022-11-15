@@ -33,6 +33,7 @@ docker images
 ##run docker image; here -d: detach mode, -p: assign port, 5000: local host port, 8000: container port
 docker run -d -p 5000:8000 welcome-app
 ```
+```
 #download python:3.7 from Docker Hub
 #internally linux base image is downloaded
 FROM python:3.7
@@ -44,6 +45,13 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 #run python file like `python app.py`
 CMD ["python","app.py"]
+```
+##remove docker images
+```
+docker ps
+docker stop <image id>
+docker images
+docker rmi -f <image name>
 ```
 
 # Create Docker Command: 
