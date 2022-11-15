@@ -53,6 +53,12 @@ docker stop <image id>
 docker images
 docker rmi -f <image name>
 ```
+## docker images push to docker Hub
+```
+docker build -t sanowarhossain/welcome-app .
+docker push sanowarhossain/welcome:latest #here, latest: version
+```
+
 
 # Create Docker Command: 
 1. docker -v
