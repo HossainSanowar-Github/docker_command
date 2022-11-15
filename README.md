@@ -8,6 +8,21 @@ https://hub.docker.com/r/docker/getting-started
 
 https://labs.play-with-docker.com/
 
+# Docker steps:
+1. Create Docker file
+- From
+- Copy
+- Workdir
+- Run
+- CMD
+2. Build the Docker images
+- docker build -t <image-name>
+3. docker images
+4. docker run -d -p host port:container port image
+5. docker push <username>/docker image
+---------------------------------------------------------------------------------------------------------------------------------------------
+  
+
 ##docker pull image
 ```
 ##Example 1:
