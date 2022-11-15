@@ -1,10 +1,50 @@
 # docker_command
 
+https://dockerlabs.collabnix.com/docker/cheatsheet/
+
 https://www.docker.com/
 
 https://hub.docker.com/r/docker/getting-started
 
 https://labs.play-with-docker.com/
+
+##docker pull image
+```
+##Example 1:
+docker pull docker/getting-started
+docker images
+docker run -d -p 80:80 docker/getting-started #here -d:ditach mode, -p: prefix, 80: local host port, 80: container port
+docker ps #show the docker status
+Example 2: 
+docker pull redis
+docker images
+```
+## Create Docker File
+```
+1. Create a Dockerfile
+FROM
+COPY
+WORKDIR
+RUN
+CMD
+2. Build the docker image; `.` means current directory
+docker build -t <image-name> .
+docker images
+##run docker image; here -d: detach mode, -p: assign port, 5000: local host port, 8000: container port
+docker run -d -p 5000:8000 welcome-app
+```
+#download python:3.7 from Docker Hub
+#internally linux base image is downloaded
+FROM python:3.7
+##copy each and every from local folder, put inside the `docker app` folder; that means source is `.` and destination is `app`
+COPY . /app
+#get working directory
+WORKDIR /app
+#run all the required libraries
+RUN pip install -r requirements.txt
+#run python file like `python app.py`
+CMD ["python","app.py"]
+```
 
 # Create Docker Command: 
 1. docker -v
