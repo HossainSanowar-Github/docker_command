@@ -25,6 +25,8 @@ https://labs.play-with-docker.com/
 6. docker ps
 7. docker stop <image_id>
 8. docker rmi -f <image_name>
+9. http://localhost:8080/ #run in localhost using local host port: 8080
+10. app.run(host="0.0.0.0",port=5000) # this is remote port
 ---------------------------------------------------------------------------------------------------------------------------------------------
   
 
